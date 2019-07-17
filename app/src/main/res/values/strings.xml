@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DicodingMADE</string>
+    <string name="title">Title</string>
+    <string name="director">Director</string>
+    <string name="status">Status</string>
+    <string name="actor">Actor</string>
+    <string name="synopsis">Synopsis</string>
+</resources>
