@@ -7,11 +7,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import exercise.dicoding.maichel.dicodingmade.model.ModelUpcomingFilm
 import exercise.dicoding.maichel.dicodingmade.R
-import kotlinx.android.synthetic.main.item_upcoming_shows.view.*
+import kotlinx.android.synthetic.main.item_movies.view.*
 
 class UpcomingFilmAdapter(private val films: List<ModelUpcomingFilm>, val listener: (ModelUpcomingFilm)->Unit): RecyclerView.Adapter<UpcomingFilmAdapter.FilmHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FilmHolder {
-        return FilmHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_upcoming_shows, parent, false))
+        return FilmHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_movies, parent, false))
     }
 
     override fun getItemCount(): Int = films.size

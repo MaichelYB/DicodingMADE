@@ -20,10 +20,10 @@ android {
 
         //Get movies
         buildConfigField "String", "BASE_URL", "\"https://api.themoviedb.org/3/\""
-        buildConfigField "String", "API_KEY", "api_key=583c00d512f8f29d0f8700639d387c47"
+        buildConfigField "String", "API_KEY", "\"api_key=583c00d512f8f29d0f8700639d387c47\""
 
         //Get image
-        buildConfigField "String", "IMAGE_URL", "https://image.tmdb.org/t/p/w500/"
+        buildConfigField "String", "IMAGE_URL", "\"https://image.tmdb.org/t/p/w500/\""
     }
     androidExtensions {
         experimental = true
@@ -39,7 +39,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.0-M2'
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'com.google.code.gson:gson:2.8.5'
@@ -48,10 +48,11 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.core:core-ktx:1.0.2'
-    
+
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'com.romandanylyk:pageindicatorview:1.0.3@aar'
     implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
