@@ -1,4 +1,4 @@
-package exercise.dicoding.maichel.dicodingmade.Data
+package exercise.dicoding.maichel.dicodingmade.api
 
 class DataUpcomingFilm {
     val upcomingFilm = listOf(listOf("Shazam","David Sandberg", "Zachary Levi, Asher Angel, Mark Strong, " +

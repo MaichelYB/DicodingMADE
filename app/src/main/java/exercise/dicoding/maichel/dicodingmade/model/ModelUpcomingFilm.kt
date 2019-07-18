@@ -1,4 +1,4 @@
-package exercise.dicoding.maichel.dicodingmade.Model
+package exercise.dicoding.maichel.dicodingmade.model
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

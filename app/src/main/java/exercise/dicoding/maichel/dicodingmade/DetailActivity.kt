@@ -1,11 +1,10 @@
 package exercise.dicoding.maichel.dicodingmade
 
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.squareup.picasso.Picasso
-import exercise.dicoding.maichel.dicodingmade.Model.ModelUpcomingFilm
+import exercise.dicoding.maichel.dicodingmade.model.ModelUpcomingFilm
 import kotlinx.android.synthetic.main.activity_detail.*
 
 class DetailActivity: AppCompatActivity() {

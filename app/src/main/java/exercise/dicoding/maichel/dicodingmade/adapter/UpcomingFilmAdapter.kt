@@ -1,13 +1,11 @@
-package exercise.dicoding.maichel.dicodingmade.Adapter
+package exercise.dicoding.maichel.dicodingmade.adapter
 
-import android.text.Layout
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
-import exercise.dicoding.maichel.dicodingmade.Model.ModelUpcomingFilm
+import exercise.dicoding.maichel.dicodingmade.model.ModelUpcomingFilm
 import exercise.dicoding.maichel.dicodingmade.R
 import kotlinx.android.synthetic.main.item_upcoming_shows.view.*
 

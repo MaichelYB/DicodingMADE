@@ -3,12 +3,9 @@ package exercise.dicoding.maichel.dicodingmade
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.LinearLayout
-import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
-import exercise.dicoding.maichel.dicodingmade.Adapter.UpcomingFilmAdapter
-import exercise.dicoding.maichel.dicodingmade.Data.DataUpcomingFilm
-import exercise.dicoding.maichel.dicodingmade.Model.ModelUpcomingFilm
+import exercise.dicoding.maichel.dicodingmade.adapter.UpcomingFilmAdapter
+import exercise.dicoding.maichel.dicodingmade.model.ModelUpcomingFilm
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
