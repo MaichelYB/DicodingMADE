@@ -3,7 +3,7 @@ package exercise.dicoding.maichel.dicodingmade.api
 import android.net.Uri
 import exercise.dicoding.maichel.dicodingmade.BuildConfig
 
-class FilmDBApi {
+object FilmDBApi {
 
     fun getNowShowing():String{
         return BuildConfig.BASE_URL + "movie/now_playing?" + BuildConfig.API_KEY + "&language=en-US&region=id"

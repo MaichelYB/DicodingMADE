@@ -8,10 +8,10 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="tanggalTayang">Tanggal Tayang</string>
+    <string name="tanggalTayang">Release Date</string>
     <string name="upcoming">Upcoming</string>
     <string name="ongoing">Ongoing</string>
-    <string name="change_language_settings">Change Languange</string>
+    <string name="change_language_settings">Change Language</string>
     <string name="movies">Movies</string>
     <string name="tv_show">Tv Show</string>
 </resources>

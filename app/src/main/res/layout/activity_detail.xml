@@ -2,130 +2,162 @@
 
 <ScrollView
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-<LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-    <RelativeLayout
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content">
+        android:layout_height="match_parent" android:id="@+id/scrollView2">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
         <ImageView
                 android:layout_width="150dp"
                 android:layout_height="250dp"
-                android:layout_margin="20dp"
-                android:id="@+id/img_up_film_detail"/>
+                android:layout_margin="30dp"
+                android:id="@+id/img_up_film_detail"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp" />
 
-        <TextView android:layout_width="match_parent"
+        <TextView android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:id="@+id/title"
-                  android:layout_toRightOf="@id/img_up_film_detail"
-                  android:layout_toEndOf="@id/img_up_film_detail"
                   android:text="@string/title"
                   android:textSize="16sp"
-                  android:layout_marginTop="20dp"
-                  android:layout_marginBottom="10dp"
+                  android:layout_marginTop="16dp"
+                  android:layout_marginLeft="16dp"
+                  android:layout_marginStart="16dp"
+                  app:layout_constraintTop_toTopOf="parent"
+                  app:layout_constraintStart_toEndOf="@id/img_up_film_detail"
         />
 
         <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="@string/app_name"
                 android:id="@+id/title_up_film_detail"
-                android:layout_toRightOf="@id/img_up_film_detail"
-                android:layout_toEndOf="@id/img_up_film_detail"
-                android:layout_below="@id/title"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
                 android:textSize="14sp"
-                android:layout_marginBottom="10dp"
-        />
+                app:layout_constraintTop_toBottomOf="@id/title"
+                app:layout_constraintStart_toEndOf="@id/img_up_film_detail"/>
 
         <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/director"
-                android:layout_below="@id/title_up_film_detail"
-                android:layout_toEndOf="@id/img_up_film_detail"
-                android:layout_toRightOf="@id/img_up_film_detail"
-                android:text="@string/director"
+                android:text="@string/tanggalTayang"
                 android:textSize="16sp"
-                android:layout_marginBottom="10dp"
-        />
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/title_up_film_detail"
+                app:layout_constraintStart_toEndOf="@+id/img_up_film_detail"/>
 
         <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/director_up_movie_detail"
-                android:layout_below="@id/director"
-                android:layout_toEndOf="@id/img_up_film_detail"
-                android:layout_toRightOf="@id/img_up_film_detail"
+                android:layout_width="179dp"
+                android:layout_height="21dp"
+                android:id="@+id/tanggal_tayang"
                 android:textSize="14sp"
-                android:layout_marginBottom="10dp"
-        />
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/director"
+                app:layout_constraintStart_toEndOf="@id/img_up_film_detail"/>
 
         <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/status"
-                android:layout_below="@id/director_up_movie_detail"
-                android:layout_toEndOf="@id/img_up_film_detail"
-                android:layout_toRightOf="@id/img_up_film_detail"
                 android:text="@string/status"
                 android:textSize="16sp"
                 android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/tanggal_tayang"
+                app:layout_constraintStart_toEndOf="@id/img_up_film_detail"
         />
 
         <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="@string/app_name"
                 android:id="@+id/stat_up_movies"
-                android:layout_below="@id/status"
-                android:layout_toEndOf="@id/img_up_film_detail"
-                android:layout_toRightOf="@id/img_up_film_detail"
                 android:textSize="14sp"
                 android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/status"
+                app:layout_constraintStart_toEndOf="@id/img_up_film_detail"
         />
+
 
         <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/actor"
-                android:layout_below="@id/stat_up_movies"
-                android:layout_toEndOf="@id/img_up_film_detail"
-                android:layout_toRightOf="@id/img_up_film_detail"
                 android:text="@string/actor"
                 android:textSize="16sp"
+                android:layout_margin="10dp"
                 android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/img_up_film_detail"
+                app:layout_constraintStart_toStartOf="parent"
         />
 
         <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/act_up_movie_detail"
-                android:layout_below="@id/actor"
-                android:layout_toEndOf="@id/img_up_film_detail"
-                android:layout_toRightOf="@id/img_up_film_detail"
+                android:textSize="14sp"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/actor"
+        />
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/synopsis"
+                android:textSize="16sp"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/synopsis"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/act_up_movie_detail"
+        />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/synopsis_up_movies"
+                android:text="@string/app_name"
                 android:textSize="14sp"
                 android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/synopsis"
         />
-    </RelativeLayout>
-    <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/synopsis"
-            android:textSize="16sp"
-            android:layout_margin="10dp"
-            android:layout_marginBottom="10dp"
-            android:text="@string/synopsis"
-    />
 
-    <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/synopsis_up_movies"
-            android:textSize="14sp"
-            android:layout_marginBottom="10dp"
-    />
-</LinearLayout>
+        <ProgressBar
+                android:id="@+id/pb_movies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

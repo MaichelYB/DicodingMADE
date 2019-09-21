@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DicodingMADE</string>
+    <string name="title">Judul</string>
+    <string name="director">Sutradara</string>
+    <string name="status">Status</string>
+    <string name="actor">Aktor</string>
+    <string name="synopsis">Sinopsis</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Halo fragment kosong</string>
+    <string name="tanggalTayang">Tanggal Tayang</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="ongoing">Ongoing</string>
+    <string name="change_language_settings">Ubah Bahasa</string>
+    <string name="movies">Bioskop</string>
+    <string name="tv_show">Tv</string>
+</resources>
